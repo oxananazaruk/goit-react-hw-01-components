@@ -12,6 +12,7 @@ export const Description = styled.div`
 `;
 
 export const UserAvatar = styled.img`
+  margin: 0 auto;
   margin-top: ${p => p.theme.spacing(4)};
   width: 200px;
   height: 200px;

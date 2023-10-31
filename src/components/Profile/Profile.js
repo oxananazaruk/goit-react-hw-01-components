@@ -11,23 +11,23 @@ export const Profile = ({ username, tag, location, avatar, stats }) => {
     <UserCard>
       <Description>
         <UserAvatar src={avatar} alt="User avatar" />
-        <p class="name">{username}</p>
-        <p class="tag">@ {tag}</p>
-        <p class="location">{location}</p>
+        <p>{username}</p>
+        <p>@{tag}</p>
+        <p>{location}</p>
       </Description>
 
       <Stats>
         <StatsItem>
-          <span class="label">Followers</span>
-          <span class="quantity"> {stats.followers}</span>
+          <span>Followers</span>
+          <span> {stats.followers}</span>
         </StatsItem>
         <StatsItem>
-          <span class="label">Views</span>
-          <span class="quantity"> {stats.views}</span>
+          <span>Views</span>
+          <span> {stats.views}</span>
         </StatsItem>
         <StatsItem>
-          <span class="label">Likes</span>
-          <span class="quantity"> {stats.likes}</span>
+          <span>Likes</span>
+          <span> {stats.likes}</span>
         </StatsItem>
       </Stats>
     </UserCard>

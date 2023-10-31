@@ -1,3 +1,4 @@
+import { GlobalStyle } from './GlobalStyle';
 import user from './Profile/user.json';
 import { Profile } from './Profile/Profile';
 import data from './Statistics/data.json';
@@ -23,6 +24,8 @@ export const App = () => {
       <FriendList friends={friendList} />
 
       <TransactionHistory items={transactions} />
+
+      <GlobalStyle />
     </>
   );
 };
