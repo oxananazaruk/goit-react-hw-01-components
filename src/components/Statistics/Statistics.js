@@ -5,10 +5,10 @@ import {
   StatItem,
 } from './Statistics.styled';
 
-export const Statistics = ({ stats, title }) => {
+export const Statistics = ({ title, stats }) => {
   return (
     <StatSection>
-      {title.length > 0 && <SectionTitle>{title}</SectionTitle>}
+      {title && <SectionTitle>{title}</SectionTitle>}
 
       <StatList>
         {stats.map(stat => {
